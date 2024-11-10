@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos - Mi Página Web</title>
+    <link rel="stylesheet" href="products.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo-container">
+                <img src="Logo1.png" alt="Logo de la empresa" class="logo-image">
+            </div>
+            <nav>
+                <ul class="menu">
+                    <li><a href="index.html" class="nav-link">Inicio</a></li>
+                    <li><a href="about.html" class="nav-link">Acerca de</a></li>
+                    <li><a href="products.html" class="nav-link active" data-page="products">Productos</a></li>
+                    <li><a href="contact.html" class="nav-link" data-page="contact">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="header-buttons">
+                <button id="darkModeButton">Modo Oscuro</button>
+            </div>
+            <button class="hamburger" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <main id="content">
+        <h2>Nuestros Productos</h2>
+        <div class="product-list">
+            <div class="product-item" data-category="electronics">
+                <h3>Producto 1</h3>
+                <img src="CHILE.jpg" alt="Imagen del producto 1">
+                <p>Chile Capeado</p>
+                <div class="product-expanded-description">
+                    <h4>Chile Capeado</h4>
+                    <p>Delicioso chile poblano relleno de queso, cubierto con una suave capa de huevo batido y frito hasta alcanzar un dorado perfecto. Servido sobre una cama de salsa de tomate casera.</p>
+                    <ul>
+                        <li>Ingredientes principales:</li>
+                        <li>- Chile poblano</li>
+                        <li>- Queso Oaxaca</li>
+                        <li>- Huevo</li>
+                        <li>- Salsa de tomate</li>
+                    </ul>
+                    <p class="price">$35.00 MXN</p>
+                </div>
+            </div>
+            <div class="product-item" data-category="electronics">
+                <h3>Producto 2</h3>
+                <img src="tamal.jpg" alt="Imagen del producto 1">
+                <p>Tamales</p>
+                <div class="product-expanded-description">
+                    <h4>Tamales</h4>
+                    <p>Masa de maíz envuelta en hojas de maíz o plátano, rellena de ingredientes dulces o salados, y cocida al vapor. Son una comida tradicional mexicana muy versátil.</p>
+                    <ul>
+                        <li>Ingredientes principales:</li>
+                        <li>- Masa de maíz</li>
+                        <li>- Manteca de cerdo</li>
+                        <li>- Rellenos variados: salsa verde, mole, pollo, rajas con queso, o dulce con frutas y pasas.</li>
+                        <li>- Hojas de maíz</li>
+                    </ul>
+                    <p class="price">$25.00 MXN</p>
+                </div>
+            </div>
+            <div class="product-item" data-category="electronics">
+                <h3>Producto 3</h3>
+                <img src="tacodorado.png" alt="Imagen del producto 1">
+                <p>Tacos Dorados</p>
+                <div class="product-expanded-description">
+                    <h4>Tacos Dorados</h4>
+                    <p>Tortillas de maíz rellenas (a menudo de pollo o papa), enrolladas y fritas hasta quedar crujientes. Suelen servirse con crema, lechuga y salsa.</p>
+                    <ul>
+                        <li>Ingredientes principales:</li>
+                        <li>- Tortillas de maíz</li>
+                        <li>- Relleno: pollo desmenuzado, papa o carne deshebrada</li>
+                        <li>- Acompañamientos: crema, queso rallado, lechuga, y salsa.</li>
+                    </ul>
+                    <p class="price">$30.00 MXN</p>
+                </div>
+            </div>
+            <div class="product-item" data-category="electronics">
+                <h3>Producto 4</h3>
+                <img src="verduras.jpg" alt="Imagen del producto 1">
+                <p>Verduras</p>
+                <div class="product-expanded-description">
+                    <h4>Verduras</h4>
+                    <p>En la comida mexicana, las verduras se pueden servir como acompañamiento o en preparaciones frescas o cocidas. Se usan para añadir sabor, textura y frescura.</p>
+                    <ul>
+                        <li>Ingredientes principales:</li>
+                        <li>- Lechuga</li>
+                        <li>- Jitomate</li>
+                        <li>- Zanahoria</li>
+                        <li>- Rábanos</li>
+                    </ul>
+                    <p class="price">$20.00 MXN</p>
+                </div>
+            </div>
+            <div class="product-item" data-category="electronics">
+                <h3>Producto 5</h3>
+                <img src="salsa.jpg" alt="Imagen del producto 1">
+                <p>Salsas</p>
+                <div class="product-expanded-description">
+                    <h4>Salsas</h4>
+                    <p>Salsas frescas o cocidas, picantes o suaves, hechas con ingredientes frescos que acompañan casi cualquier platillo mexicano.</p>
+                    <ul>
+                        <li>Ingredientes principales:</li>
+                        <li>- Tomate</li>
+                        <li>- Chile</li>
+                        <li>- Cebolla</li>
+                        <li>- Ajo</li>
+                    </ul>
+                    <p class="price">$15.00 MXN</p>
+                </div>
+            </div>
+            <div class="product-item" data-category="electronics">
+                <h3>Producto 6</h3>
+                <img src="boneless de coliflor.jpg" alt="Imagen del producto 1">
+                <p>Bowls</p>
+                <div class="product-expanded-description">
+                    <h4>Bowls</h4>
+                    <p>Una mezcla de ingredientes típicos de la cocina mexicana servidos en un tazón, que puede incluir arroz, frijoles, carnes, y toppings frescos.</p>
+                    <ul>
+                        <li>Ingredientes principales:</li>
+                        <li>- Arroz y frijoles</li>
+                        <li>- Carne (como pollo, res, o cerdo)</li>
+                        <li>- Verduras frescas: lechuga, jitomate, cebolla, aguacate</li>
+                        <li>- Toppings: queso, crema, cilantro, y salsa.</li>
+                    </ul>
+                    <p class="price">$85.00 MXN</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Mi Sitio Web. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="products.js"></script>
+</body>
+</html>

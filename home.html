@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio - Mi Página Web</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo-container">
+                <img src="Logo1.png" alt="Logo de la empresa" class="logo-image">
+            </div>
+            <nav>
+                <ul class="menu">
+                    <li><a href="index.html" class="nav-link active" data-page="home">Inicio</a></li>
+                    <li><a href="about.html" class="nav-link" data-page="about">Acerca de</a></li>
+                    <li><a href="products.html" class="nav-link" data-page="products">Productos</a></li>
+                    <li><a href="contact.html" class="nav-link" data-page="contact">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="header-buttons">
+                <button id="darkModeButton">Modo Oscuro</button>
+            </div>
+            <button class="hamburger" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <main id="content">
+        <h2>Bienvenido a Mi Página Web</h2>
+        <p>Esta es la página de inicio.</p>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Mi Sitio Web. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="home.js"></script>
+</body>
+</html>

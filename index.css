@@ -1,0 +1,330 @@
+/* Nueva sección imagen con texto */
+.hero-image {
+    position: relative;
+    width: 100%;
+    height: 700px;  /* Ajusta la altura de la imagen según lo necesario */
+    background-image: url('Agricultor.jpg'); /* Cambia por la ruta de tu imagen */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-text {
+    position: absolute;  /* Esto hace que el texto esté sobre la imagen */
+    color: white;
+    font-size: 3rem; /* Ajusta el tamaño del texto */
+    text-align: center;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+/* General */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.dark-mode {
+    background-color: #333;
+    color: #fff;
+}
+
+/* Header */
+header {
+    background-color: #699d43;
+    padding: 1rem;
+    color: white;
+    position: relative;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-image {
+    height: 60px;
+    margin-right: 10px;
+}
+
+nav {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.menu {
+    display: flex;
+    gap: 1rem;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+}
+
+.header-buttons {
+    display: flex;
+    gap: 0.5rem;
+}
+
+#darkModeButton {
+    background-color: #f9d66c;
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 0.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#darkModeButton:hover {
+    background-color: #555;
+    color: rgb(255, 255, 255);
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 0;
+}
+
+.hamburger span {
+    height: 3px;
+    width: 25px;
+    background-color: white;
+    margin: 2px 0;
+    display: block;
+    transition: 0.3s;
+}
+
+/* Banner */
+.banner {
+    background-color: #f9f9f9;
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.banner-content {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 2rem;
+    border-radius: 8px;
+    color: white;
+}
+
+.banner h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+.banner p {
+    font-size: 1.25rem;
+    margin: 1rem 0;
+}
+
+.video-container {
+    margin-top: 2rem;
+}
+
+iframe {
+    max-width: 100%;
+    height: 315px;
+    border: none;
+}
+
+/* Información del Carrusel */
+.info-carousel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4rem 2rem;
+}
+
+.carousel-nav {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.carousel-nav button {
+    background: none;
+    border: 1px solid #699d43;
+    color: #699d43;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.carousel-nav button:hover {
+    background-color: #699d43;
+    color: white;
+}
+
+.carousel-nav .active {
+    background-color: #699d43;
+    color: white;
+}
+
+.carousel-content {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.section {
+    width: 100%;
+    max-width: 600px;
+    display: none;
+}
+
+.section.active {
+    display: block;
+}
+
+.section h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.section p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #699d43;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.cta-button:hover {
+    background-color: #587a36;
+}
+
+/* Footer */
+footer {
+    background-color: #699d43;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: auto;
+}
+
+/* Modo Oscuro */
+.dark-mode .certifications, .dark-mode .our-companies,
+.dark-mode .our-mission, .dark-mode .our-values {
+    background-color: #444;
+    color: #fff;
+}
+
+.dark-mode .certifications h2, .dark-mode .our-companies h2,
+.dark-mode .company-item h3, .dark-mode .our-mission h3, 
+.dark-mode .our-values h3, .dark-mode .our-values ul li strong {
+    color: #8bc34a;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header-content {
+        flex-wrap: wrap;
+    }
+
+    nav {
+        order: 3;
+        width: 100%;
+        justify-content: flex-start;
+        margin-top: 1rem;
+    }
+
+    .header-buttons {
+        order: 2;
+    }
+
+    .hamburger {
+        display: flex;
+        order: 4;
+        margin-left: auto;
+    }
+
+    .menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #699d43;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        z-index: 1000;
+    }
+
+    .menu.active {
+        display: flex;
+    }
+
+    .menu li {
+        text-align: center;
+        padding: 0.5rem 0;
+    }
+
+    .hamburger.active span:nth-child(1) {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+
+    .hamburger.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active span:nth-child(3) {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+    .info-carousel {
+        padding: 2rem;
+    }
+
+    .carousel-content {
+        flex-direction: column;
+    }
+
+    .section {
+        max-width: 100%;
+    }
+
+    .hero-text {
+        font-size: 1.5rem;
+    }
+
+    .hero-image {
+        height: 250px;
+    }
+}

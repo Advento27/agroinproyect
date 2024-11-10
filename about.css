@@ -1,0 +1,285 @@
+/* Estilos para la sección "Acerca de Nosotros" */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.dark-mode {
+    background-color: #333;
+    color: #fff;
+}
+
+header {
+    background-color: #699d43;
+    padding: 1rem;
+    color: white;
+    position: relative;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-image {
+    height: 60px;
+    margin-right: 10px;
+}
+
+nav {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.menu {
+    display: flex;
+    gap: 1rem;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+}
+
+.header-buttons {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 0;
+}
+
+.hamburger span {
+    height: 3px;
+    width: 25px;
+    background-color: white;
+    margin: 2px 0;
+    display: block;
+    transition: 0.3s;
+}
+
+main {
+    flex: 1;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+button {
+    background-color: #f9d66c;
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 0.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #555;
+    color: rgb(255, 255, 255);
+}
+
+.our-team {
+    margin-top: 2rem;
+}
+
+.our-team h3 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+}
+
+.team-member {
+    text-align: center;
+    background-color: #f9f9f9;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.team-member img {
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
+.team-member h4 {
+    margin: 0.5rem 0;
+    font-size: 1.2rem;
+}
+
+.team-member p {
+    color: #666;
+    font-size: 1rem;
+}
+
+.our-mission, .our-values, .certifications, .our-companies {
+    margin-top: 3rem;
+    background-color: #f1f1f1;
+    padding: 2rem;
+    border-radius: 8px;
+}
+
+.our-mission h3, .our-values h3, .certifications h2, .our-companies h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+    color: #1e3f66;
+}
+
+.our-mission p, .our-values ul {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    color: #333;
+}
+
+.our-values ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.our-values ul li {
+    margin: 0.5rem 0;
+    font-size: 1.1rem;
+}
+
+.our-values ul li strong {
+    color: #699d43;
+}
+
+.certification-list, .company-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+
+.certification-item, .company-item {
+    text-align: center;
+    margin: 1rem;
+    max-width: 300px;
+}
+
+.certification-item img, .company-item img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.company-item h3 {
+    color: #699d43;
+    margin-bottom: 0.5rem;
+}
+
+.dark-mode .certifications, .dark-mode .our-companies,
+.dark-mode .our-mission, .dark-mode .our-values {
+    background-color: #444;
+    color: #fff;
+}
+
+.dark-mode .certifications h2, .dark-mode .our-companies h2,
+.dark-mode .company-item h3, .dark-mode .our-mission h3, 
+.dark-mode .our-values h3, .dark-mode .our-values ul li strong {
+    color: #8bc34a;
+}
+
+@media (max-width: 968px) {
+    .header-content {
+        flex-wrap: wrap;
+    }
+
+    nav {
+        order: 3;
+        width: 100%;
+        justify-content: flex-start;
+        margin-top: 1rem;
+    }
+
+    .header-buttons {
+        order: 2;
+    }
+
+    .hamburger {
+        display: flex;
+        order: 4;
+        margin-left: auto;
+    }
+
+    .menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #699d43;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        z-index: 1000;
+    }
+
+    .menu.active {
+        display: flex;
+    }
+
+    .menu li {
+        text-align: center;
+        padding: 0.5rem 0;
+    }
+
+    .hamburger.active span:nth-child(1) {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+
+    .hamburger.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active span:nth-child(3) {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+
+    .certification-list, .company-list {
+        flex-direction: column;
+        align-items: center;
+    }
+}

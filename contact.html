@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Mi Página Web</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo-container">
+                <img src="Logo1.png" alt="Logo de la empresa" class="logo-image">
+            </div>
+            <nav>
+                <ul class="menu">
+                    <li><a href="index.html" class="nav-link">Inicio</a></li>
+                    <li><a href="about.html" class="nav-link">Acerca de</a></li>
+                    <li><a href="products.html" class="nav-link">Productos</a></li>
+                    <li><a href="contact.html" class="nav-link active" data-page="contact">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="header-buttons">
+                <button id="darkModeButton">Modo Oscuro</button>
+            </div>
+            <button class="hamburger" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <main id="content">
+        <section class="contact-section">
+            <h2>Contacto</h2>
+            <p>¿Quieres distribuir nuestros productos o incorporarlos en tu negocio?</p>
+            <p>Llena este formulario de contacto para poder conversar sobre tus dudas y todo lo que necesitas saber.</p>
+            <form id="contactForm" class="styled-form">
+                <div class="form-row">
+                    <input type="text" id="name" name="name" placeholder="*Nombre" required>
+                    <input type="text" id="lastname" name="lastname" placeholder="*Apellidos" required>
+                </div>
+                <div class="form-row">
+                    <input type="email" id="email" name="email" placeholder="*Correo" required>
+                </div>
+                <div class="form-row">
+                    <input type="tel" id="phone" name="phone" placeholder="*Teléfono" required>
+                    <input type="text" id="company" name="company" placeholder="Empresa">
+                </div>
+                <div class="form-row">
+                    <textarea id="message" name="message" placeholder="Mensaje" required></textarea>
+                </div>
+                <button type="submit" class="submit-button">ENVIAR</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Mi Sitio Web. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="contact.js"></script>
+</body>
+</html>

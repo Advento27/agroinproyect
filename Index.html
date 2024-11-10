@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agroin - Productos Mexicanos</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo-container">
+                <img src="Logo1.png" alt="Logo de Agroin" class="logo-image">
+            </div>
+            <nav>
+                <ul class="menu">
+                    <li><a href="index.html" class="nav-link active" data-page="home">Inicio</a></li>
+                    <li><a href="about.html" class="nav-link" data-page="about">Acerca de</a></li>
+                    <li><a href="products.html" class="nav-link" data-page="products">Productos</a></li>
+                    <li><a href="services.html" class="nav-link" data-page="services">Servicios</a></li>
+                    <li><a href="contact.html" class="nav-link" data-page="contact">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="header-buttons">
+                <button id="darkModeButton">Modo Oscuro</button>
+            </div>
+            <button class="hamburger" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Nueva Sección con Imagen y Texto -->
+    <div class="hero-image">
+        <div class="hero-text">
+            <h1>Todo el sabor y la frescura del campo mexicano</h1>
+        </div>
+    </div>
+    
+
+    <!-- Banner Principal -->
+    <div class="banner">
+        <div class="banner-content">
+            <h1>Comprometidos con la sociedad y el entorno</h1>
+            <p>En Agroin, nos esforzamos continuamente para garantizar que cada etapa de nuestros procesos, desde el cultivo hasta la entrega de nuestros productos de la más alta calidad, cumpla con los rigurosos estándares internacionales. Nos enorgullece contribuir al mercado global, llevando a su mesa los auténticos sabores de México.</p>
+            <p>Además de destacarnos por la calidad de nuestros productos, también tenemos un compromiso inquebrantable con nuestras comunidades y medio ambiente, empleando prácticas sostenibles para su beneficio.</p>
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/EyyN4phO54E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+    <main id="content">
+        <div class="info-carousel">
+            <div class="carousel-nav">
+                <button class="nav-item active" data-section="nosotros">NOSOTROS</button>
+                <button class="nav-item" data-section="historia">HISTORIA</button>
+                <button class="nav-item" data-section="mision">MISIÓN</button>
+                <button class="nav-item" data-section="vision">VISIÓN</button>
+                <button class="nav-item" data-section="valores">VALORES</button>
+            </div>
+            <div class="carousel-content">
+                <div class="section active" id="nosotros">
+                    <h2>Nosotros</h2>
+                    <p>En Agroin llevamos hasta tu negocio toda la riqueza de los campos y gastronomía mexicana, sin importar en dónde estés.</p>
+                    <p>Cuidamos cada detalle en la elaboración de nuestros alimentos congelados para mantener intactos todo su sabor y frescura, sin añadir químicos. Desde que nacen del campo hasta que te los entregamos.</p>
+                    <h3>Alimentos elaborados, verduras y frutas, ¿qué necesitas?</h3>
+                    <a href="products.html" class="cta-button">CONOCE NUESTROS PRODUCTOS</a>
+                </div>
+                <div class="section" id="historia">
+                    <h2>Historia</h2>
+                    <p>Comienza en 2003 con la producción de chile poblano asado, congelado y listo para rellenar.</p>
+                    <p>La excelente respuesta de nuestros clientes, nos llevó a expandir nuestra línea de productos y a construir una nueva planta de alta tecnología, con estándares internacionales de calidad e inocuidad.</p>
+                    <p>En 2009, dimos un gran paso al incorporar nuestro platillo estrella: el chile poblano congelado relleno de queso, así como al ampliar aún más nuestra línea de asados y congelados.</p>
+                    <p>Más adelante, en 2013, iniciamos la empresa Nutrifreeze para llevar todos nuestros productos hasta Estados Unidos.</p>
+                </div>
+                <div class="section" id="mision">
+                    <h2>Misión</h2>
+                    <p>Crear productos de valor agregado, rentables y de calidad para satisfacer el mercado de la nostalgia, México y el mundo.</p>
+                </div>
+                <div class="section" id="vision">
+                    <h2>Visión</h2>
+                    <p>Ser una empresa reconocida que comercializa alimentos de alto valor agregado en el mercado de la nostalgia, México y el mundo.</p>
+                </div>
+                <div class="section" id="valores">
+                    <h2>Valores</h2>
+                    <h3>Honestidad</h3>
+                    <p>Elegimos trabajar con base en la verdad y justicia, con franqueza y congruencia en nuestros actos, para desarrollar productos de calidad.</p>
+                    <h3>Respeto</h3> 
+                    <p>Reconocemos y tenemos consideración hacia nuestro trabajo, compañeros, clientes y proveedores, otorgándoles el valor que tienen por sí mismos.</p>
+                    <h3>Lealtad</h3>
+                    <p>Nos comprometemos a defender y creer en nuestro trabajo, pues somos una empresa auténtica e innovadora que produce alimentos que buscan satisfacer las necesidades de nuestros clientes.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Agroin. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>
